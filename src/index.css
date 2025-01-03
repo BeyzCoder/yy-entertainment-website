@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Mono", serif;
+  background-color: var(--color-white-shade-1);
+  color: var(--color-black-shade-1);
+}
+
+:root {
+  --color-black-shade-1: #303336;
+  --color-white-shade-1: #E6E8E6;
+}
+
