@@ -20,7 +20,6 @@ img {
     display: flex;
     flex-direction: column;
     z-index: 2;
-    opacity: 0;
 }
 
 .reveal {
@@ -60,7 +59,7 @@ img {
 .images.stack-container {
     position: fixed;
     left: 2em;
-    bottom: 2m;
+    bottom: 2em;
     width: auto;
     height: auto;
     display: flex;
@@ -93,11 +92,12 @@ img {
     top: 2em;
     left: 2em;
     display: flex;
+    flex-direction: column;
     gap: 1em;
 }
 
 .site-logo h1 {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 500;
     line-height: 1;
     letter-spacing: -0.01em;
@@ -125,7 +125,7 @@ img {
 
 .nav .nav-item p {
     position: relative;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
 }
 
@@ -135,7 +135,23 @@ img {
     bottom: 2em;
     width: 40%;
     height: 50%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.cover-img .event-detail {
+    display: flex;
+    justify-content: space-between;
+}
+.cover-img .event-detail p {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .cover-img img {
@@ -163,12 +179,12 @@ img {
 }
 
 .site-info h2 {
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .site-info p {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -187,7 +203,7 @@ img {
 }
 
 .word, .nav-item, .line {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .word h1, .nav-item p, .site-info h2 .line span,
